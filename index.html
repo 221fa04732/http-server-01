@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="input" placeholder="Enter your message">
+        <button id="btn" onclick="storeMessage()">Click</button>
+    </div>
+
+    <p id="output"></p> <!-- This will display the stored message -->
+
+    <script>
+        function storeMessage() {
+            // Get the input value
+            let message = document.getElementById("input").value;
+
+            // Display the message on the page
+            document.getElementById("output").textContent = "Stored message: " + message;
+        }
+    </script>
+</body>
+</html>
